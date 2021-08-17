@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Results Page</title>
+    <body>
+        {% if valid == False %} 
+        <p>{{content}} is not a valid URL.</p>
+        {% endif %}
+        
+        {% if is_safe == True %}
+            <p>{{content}} is SAFE to access.</p>       
+        {% elif is_safe == False %}
+            <p>{{content}} contains MALWARE. Do not access.</p>
+        {% endif %}
+    </body>
+</head>
+<a href = home> 
+    <button type="button" style="height:60px;width:130px">Back to Home Page
+    </button>
+</a>
+
+</html>

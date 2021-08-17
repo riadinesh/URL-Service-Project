@@ -1,0 +1,15 @@
+<title>Malware Database:</title>
+<h2>Malware Database</h2>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<a href = home> 
+    <button type="button" style="height:60px;width:130px">Back to Home Page
+    </button>
+</a>

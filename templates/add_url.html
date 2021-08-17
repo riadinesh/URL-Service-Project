@@ -1,0 +1,22 @@
+<title>Adding to Database</title>
+
+<h2>Add to Database:</h2>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<p>Please enter the URL you would like to add to the malware database.</p>
+<form action = "#" method = "POST">
+    <input type = "url" name = "url" placeholder="Enter URL" value="{{url if url}}" />
+    <input type = "submit" value = "submit"/>
+</form>
+
+<a href = display> 
+    <button type="button" style="height:75px;width:150px">Display Malware Database
+    </button>
+</a>
