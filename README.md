@@ -1,4 +1,5 @@
 # URL-Service-Project
+This is a web application that acts as a malware lookup service. The user will provide a URL within an address, and a malware database will be queried in order to determine if the URL contains malware or is safe to use. 
 
 ## Prerequisites
 1) Docker has been installed and is running
