@@ -6,7 +6,7 @@
 
 `git clone git@github.com:riadinesh/URL-Service-Project.git`
 
-3) Enter the URL-Service Project directory
+3) Enter the URL-Service-Project directory
 
 ## Running the Service
 Create an image and container by running the file below using the command:
@@ -18,7 +18,7 @@ Once the program is dockerized, route to the address:
 
 http://127.0.0.1:5000/home
 
-To check whether a URL contains malware, route the address:
+To check whether a URL contains malware, input desired URL in the format below and route to the address.
 
 http://127.0.0.1:5000/url_name?url=http://test.com
 
